@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Perfumes Marcelo Carletto Junior</title>
+    <script type="text/javascript" src="jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css" /> 
+    <link href="DataTables/datatables.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+    <script type="text/javascript" src="MARCELO-CARLETTO-JR.js"></script>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Cadastro de Perfumes</a>
+        </div>
+        <div>
+            <img src="Aventus-Creed-Eau-de-Parfum-04.jpeg" alt="Perfume Creed Aventus EDP" width="90">
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" id="codigo_perfume" placeholder="Codigo do Perfume" />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="nome_perfume" placeholder="Nome do Perfume" />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="volumetria" placeholder="Volume do perfume" />
+                </div>
+                <div class="mb-3">
+                    <input type="number" class="form-control" id="valor_uni" placeholder="Valor de cada Perfume" />
+                </div>
+                <button class="btn btn-success" id="btnSalvar">Salvar</button>
+                <button class="btn btn-danger" id="btnCancelar">Cancelar</button>
+            </div>
+            <div class="col-md-6">
+                <p>
+                   <strong>Lista de Perfumes</strong> 
+                </p>
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">Código do Perfume</th>
+                        <th scope="col">Nome do Perfume</th>
+                        <th scope="col">Volume do Perfume</th>
+                        <th scope="col">Valor unitário do perfume</th>
+                        <th scope="col">Alterar</th>
+                        <th scope="col">Excluir</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabela">
+
+                    </tbody>
+                    
+                  </table>
+            </div>
+        </div>
+    </div>
+    <footer class="container">
+        <p class="float-end"><a href="#">Voltar</a></p>
+        <p> <strong>Projeto Marcelo Carletto Junior</strong>  </p>
+        <button id="btnJSON" style="color: coral;" class="btn btn-primary">Gerar JSON</button>
+        <br />
+        <br />
+        <button id="btnAjax" style="color: yellow;" class="btn btn-primary">Ajax</button>
+        <br />
+        <br />
+        <p id="data"></p>
+    </footer> 
+  </body>
+
+</html>
